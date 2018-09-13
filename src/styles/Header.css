@@ -1,0 +1,15 @@
+#headerContainer {
+    background-color: #191970;
+    color: white;
+    font-size: 30px;
+    font-family: Arial;
+    padding: 30px 15px;
+    display: inline-flex;
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    box-shadow: 10px 10px 5px black;
+    /* position: fixed; */
+    /* z-index: 99; */
+    margin-bottom: 100px;
+};
