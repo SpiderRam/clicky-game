@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "name": "Aeryn",
+        "image": "./public/images/Aeryn.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Arya",
+        "image": "./public/images/Arya.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Debra",
+        "image": "./public/images/Debra.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Hermione",
+        "image": "./public/images/Hermione.jpeg"
+    },
+    {
+        "id": 5,
+        "name": "Janeway",
+        "image": "./public/images/Janeway.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Lagertha",
+        "image": "./public/images/Lagertha.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Mags",
+        "image": "./public/images/Mags.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Nikita",
+        "image": "./public/images/Nikita.png"
+    },
+    {
+        "id": 9,
+        "name": "Precious",
+        "image": "./public/images/Precious.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Ripley",
+        "image": "./public/images/Ripley.png"
+    },
+    {
+        "id": 11,
+        "name": "Scully",
+        "image": "./public/images/Scully.jpg"
+    },
+    {
+        "id": 12,
+        "name": "Zoe",
+        "image": "./public/images/Zoe.jpg"
+    }
+]
