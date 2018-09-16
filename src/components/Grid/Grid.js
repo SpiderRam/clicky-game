@@ -2,7 +2,7 @@ import React from "react";
 import "./Grid.css";
 
 const Grid = () => (
-    <div class="wrapper">
+    <div class="gridWrapper">
         <div class="grid">
             <div class="block"></div>
             <div class="block"></div>
