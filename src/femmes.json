@@ -1,62 +1,74 @@
 [
     {
         "id": 1,
-        "name": "Aeryn",
-        "image": "./public/images/Aeryn.jpg"
+        "name": "Aeryn Sun",
+        "image": "../images/Aeryn.jpg",
+        "clicked": false
     },
     {
         "id": 2,
-        "name": "Arya",
-        "image": "./public/images/Arya.jpg"
+        "name": "Arya Stark",
+        "image": "../images/Arya.jpg",
+        "clicked": false
     },
     {
         "id": 3,
-        "name": "Debra",
-        "image": "./public/images/Debra.jpg"
+        "name": "Debra Morgan",
+        "image": "../images/Debra.jpg",
+        "clicked": false
     },
     {
         "id": 4,
-        "name": "Hermione",
-        "image": "./public/images/Hermione.jpeg"
+        "name": "Hermione Granger",
+        "image": "../images/Hermione.jpeg",
+        "clicked": false
     },
     {
         "id": 5,
-        "name": "Janeway",
-        "image": "./public/images/Janeway.jpg"
+        "name": "Captain Janeway",
+        "image": "../images/Janeway.jpg",
+        "clicked": false
     },
     {
         "id": 6,
         "name": "Lagertha",
-        "image": "./public/images/Lagertha.jpg"
+        "image": "../images/Lagertha.jpg",
+        "clicked": false
     },
     {
         "id": 7,
-        "name": "Mags",
-        "image": "./public/images/Mags.jpg"
+        "name": "Mags Bennett",
+        "image": "../images/Mags.jpg",
+        "clicked": false
     },
     {
         "id": 8,
         "name": "Nikita",
-        "image": "./public/images/Nikita.png"
+        "image": "../images/Nikita.png",
+        "clicked": false
     },
     {
         "id": 9,
-        "name": "Precious",
-        "image": "./public/images/Precious.jpg"
+        "name": "Precious Ramotswe",
+        "image": "../images/Precious.jpg",
+        "clicked": false
     },
     {
         "id": 10,
-        "name": "Ripley",
-        "image": "./public/images/Ripley.png"
+        "name": "Ellen Ripley",
+        "image": "../images/Ripley.png",
+        "clicked": false
     },
     {
         "id": 11,
-        "name": "Scully",
-        "image": "./public/images/Scully.jpg"
+        "name": "Dana Scully",
+        "image": "../images/Scully.jpg",
+        "clicked": false
     },
     {
         "id": 12,
         "name": "Zoe",
-        "image": "./public/images/Zoe.jpg"
+        "image": "../images/Zoe.jpg",
+        "clicked": false
     }
 ]

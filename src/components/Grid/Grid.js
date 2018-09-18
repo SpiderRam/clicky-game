@@ -1,24 +1,38 @@
-import React from "react";
+import React, {Component} from "react";
 import "./Grid.css";
+import femmeBlocks from "../../femmes.json";
+import Card from "../Card";
 
-const Grid = () => (
-    <div class="gridWrapper">
-        <div class="grid">
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
-        </div>
-        </div>
-);
+
+class Grid extends Component {
+    state = {
+        femmes: femmeBlocks
+    }
+
+    handleClick = name => {
+       console.log("Click event");
+    }
+
+    render() {
+        console.log(this.state.femmes);
+        return(
+            <div className="gridWrapper">
+                <div className="grid">
+                {this.state.femmes.map(femme => {
+                    console.log(femme);
+                        return (<Card 
+                        key={femme.name} 
+                        handleClick={this.handleClick}
+                        clicked={femme.clicked} 
+                        src={femme.image} 
+                        alt={femme.name}  
+                       />)
+                    })}
+                </div>
+            </div>
+        );
+    }
+};
 
 export default Grid;
     

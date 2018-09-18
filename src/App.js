@@ -3,8 +3,6 @@ import React, { Component } from "react";
 import Header from "./components/Header/Header";
 import Wrapper from "./components/Wrapper/Wrapper";
 import Grid from "./components/Grid/Grid";
-import Femmes from "./components/Femmes/Femmes";
-import femmes from "./femmes.json";
 
 // const App = () => (
 //   <div>
@@ -18,14 +16,11 @@ import femmes from "./femmes.json";
 
 
 class App extends Component {
-  // Setting this.state.femmes to the femmes json array
-  state = {
-    femmes
-  };
+  
 
-  changeToClickedTrue = id => {
+//   changeToClickedTrue = id => {
     
-  };
+//   };
 
   // Map over this.state.femmes and render a Femmes component for each femme object
   render() {
@@ -33,7 +28,7 @@ class App extends Component {
       <Wrapper>
         <Header />
           <Grid>
-            {this.state.femmes.map(femme => (
+            {/* {this.state.femmes.map(femme => (
               <Femmes
                 clicked={this.changeToClickedTrue}
                 id={femme.id}
@@ -41,7 +36,7 @@ class App extends Component {
                 name={femme.name}
                 image={femme.image}
               />
-            ))}
+            ))} */}
           </Grid>
       </Wrapper>
     );
