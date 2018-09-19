@@ -1,11 +1,11 @@
 import React from "react";
 import "./Header.css";
 
-const Header = () => (
+const Header = props => (
     <div id="headerContainer" className="container">
-        <div>Clicky-Game</div>
-        <div>Click an image to begin!</div>
-        <div id="scoreDiv"></div>
+        <div id="title">Cherchez la Femme</div>
+        <div id="directions">Don't click the same image twice!</div>
+        <div id="scoreDiv">Score: {props.score}</div>
     </div>
 );
 

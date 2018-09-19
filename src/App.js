@@ -1,6 +1,6 @@
 // import React from "react";
 import React, { Component } from "react";
-import Header from "./components/Header/Header";
+
 import Wrapper from "./components/Wrapper/Wrapper";
 import Grid from "./components/Grid/Grid";
 
@@ -26,7 +26,7 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Header />
+        
           <Grid>
             {/* {this.state.femmes.map(femme => (
               <Femmes

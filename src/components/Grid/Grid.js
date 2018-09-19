@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import "./Grid.css";
 import femmeBlocks from "../../femmes.json";
 import Card from "../Card";
+import Header from "../Header/Header";
 
 
 class Grid extends Component {
@@ -10,20 +11,36 @@ class Grid extends Component {
         score: 0
     }
 
+    handleCorrect = newFemmes => {
+        this.setState({
+            femmes: this.shuffleArray(newFemmes), 
+            score: this.state.score +1,
+         });
+    };
+
+    handleWrong = () => {
+        this.setState({
+            score: 0
+        })
+    };
+
     handleClick = name => {
-       console.log(name);
-       const newFemmes = this.state.femmes.map(femme => {
-           if (femme.name === name) {
-               femme.clicked = true;
+        let guessedCorrect = false;
+        const newFemmes = this.state.femmes.map(femme => {
+           const newPic = {...femme};
+           if (newPic.name === name) {
+               if(!newPic.clicked){
+                   console.log("Already guessed------------")
+                   newPic.clicked = true;
+                   guessedCorrect = true;
+               }
+               
            }
-           return femme;
-       })
-       this.setState({
-           femmes: this.shuffleArray(newFemmes), 
-           score: this.state.score +1,
-        });
-       console.log(newFemmes);
-    }
+           return newPic;
+       })       
+       console.log("GUESSED CORRECT: ", guessedCorrect)
+       guessedCorrect ? this.handleCorrect(newFemmes) : this.handleWrong(newFemmes)
+    };
 
     shuffleArray = femmes => {
         for (let i = femmes.length - 1; i > 0; i--) {
@@ -31,25 +48,26 @@ class Grid extends Component {
             [femmes[i], femmes[j]] = [femmes[j], femmes[i]];
         }
         return (femmes);
-    }
+    };
 
     render() {
-        console.log(this.state.femmes);
         return(
+            <div>
+            <Header score={this.state.score}/>
             <div className="gridWrapper">
                 <div className="grid">
                 {this.state.femmes.map(femme => {
-                    console.log(femme);
                         return (<Card 
+                        name={femme.name}
                         key={femme.name} 
                         handleClick={this.handleClick}
-                        clicked={femme.clicked} 
                         src={femme.image} 
                         alt={femme.name}  
                        />)
                     })}
                 </div>
             </div>
+            </div> 
         );
     }
 };
