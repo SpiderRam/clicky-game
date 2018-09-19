@@ -9,7 +9,5 @@
     flex-wrap: nowrap;
     justify-content: space-evenly;
     box-shadow: 10px 10px 5px black;
-    /* position: fixed; */
-    /* z-index: 99; */
     margin-bottom: 100px;
 };

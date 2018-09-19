@@ -6,11 +6,31 @@ import Card from "../Card";
 
 class Grid extends Component {
     state = {
-        femmes: femmeBlocks
+        femmes: femmeBlocks,
+        score: 0
     }
 
     handleClick = name => {
-       console.log("Click event");
+       console.log(name);
+       const newFemmes = this.state.femmes.map(femme => {
+           if (femme.name === name) {
+               femme.clicked = true;
+           }
+           return femme;
+       })
+       this.setState({
+           femmes: this.shuffleArray(newFemmes), 
+           score: this.state.score +1,
+        });
+       console.log(newFemmes);
+    }
+
+    shuffleArray = femmes => {
+        for (let i = femmes.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [femmes[i], femmes[j]] = [femmes[j], femmes[i]];
+        }
+        return (femmes);
     }
 
     render() {

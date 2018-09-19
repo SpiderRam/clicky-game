@@ -7,8 +7,8 @@
 .grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  height: 45vw;
-  width: 60vw;
+  /* height: 45vw; */
+  width: 70%;
   grid-gap: 20px;
 }
 
