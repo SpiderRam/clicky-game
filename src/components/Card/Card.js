@@ -5,7 +5,6 @@ const Card = props => {
     return(
         <div
             style={{backgroundImage:`url(${props.src})`}}
-            key={props.key} 
             alt={props.alt}
             className="block"
             onClick={() => props.handleClick(props.name)}>

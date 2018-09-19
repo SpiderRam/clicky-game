@@ -22,11 +22,13 @@ class Grid extends Component {
         this.setState({
             femmes: this.shuffleArray(newFemmes), 
             score: this.state.score +1,
-         });
+        });
+        
+        if (this.state.score === 11) {
+            this.resetGame();
+            console.log("You won!");
+        }
 
-         if (this.state.score === 12) {
-             this.resetGame();
-         }
     };
 
     handleWrong = () => {
@@ -62,20 +64,20 @@ class Grid extends Component {
     render() {
         return(
             <div>
-            <Header score={this.state.score}/>
-            <div className="gridWrapper">
-                <div className="grid">
-                {this.state.femmes.map(femme => {
-                        return (<Card 
-                        name={femme.name}
-                        key={femme.name} 
-                        handleClick={this.handleClick}
-                        src={femme.image} 
-                        alt={femme.name}  
-                       />)
-                    })}
+                <Header score={this.state.score}/>
+                <div className="gridWrapper">
+                    <div className="grid">
+                    {this.state.femmes.map(femme => {
+                            return (<Card 
+                            name={femme.name}
+                            key={femme.name} 
+                            handleClick={this.handleClick}
+                            src={femme.image} 
+                            alt={femme.name}  
+                        />)
+                        })}
+                    </div>
                 </div>
-            </div>
             </div> 
         );
     }
