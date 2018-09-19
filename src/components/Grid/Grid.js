@@ -11,17 +11,26 @@ class Grid extends Component {
         score: 0
     }
 
+    resetGame = () => {
+        this.setState({
+            score: 0,
+            femmes: femmeBlocks
+        })      
+    }
+
     handleCorrect = newFemmes => {
         this.setState({
             femmes: this.shuffleArray(newFemmes), 
             score: this.state.score +1,
          });
+
+         if (this.state.score === 12) {
+             this.resetGame();
+         }
     };
 
     handleWrong = () => {
-        this.setState({
-            score: 0
-        })
+        this.resetGame();
     };
 
     handleClick = name => {
@@ -30,7 +39,7 @@ class Grid extends Component {
            const newPic = {...femme};
            if (newPic.name === name) {
                if(!newPic.clicked){
-                   console.log("Already guessed------------")
+                   console.log("Already guessed------------");
                    newPic.clicked = true;
                    guessedCorrect = true;
                }
