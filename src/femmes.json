@@ -2,73 +2,73 @@
     {
         "id": 1,
         "name": "Aeryn Sun",
-        "image": "/assets/aeryn.jpg",
+        "image": "assets/aeryn.jpg",
         "clicked": false
     },
     {
         "id": 2,
         "name": "Arya Stark",
-        "image": "/assets/arya.jpg",
+        "image": "assets/arya.jpg",
         "clicked": false
     },
     {
         "id": 3,
         "name": "Debra Morgan",
-        "image": "/assets/debra.jpg",
+        "image": "assets/debra.jpg",
         "clicked": false
     },
     {
         "id": 4,
         "name": "Hermione Granger",
-        "image": "/assets/hermione.jpeg",
+        "image": "assets/hermione.jpeg",
         "clicked": false
     },
     {
         "id": 5,
         "name": "Captain Janeway",
-        "image": "/assets/janeway.jpg",
+        "image": "assets/janeway.jpg",
         "clicked": false
     },
     {
         "id": 6,
         "name": "Lagertha",
-        "image": "/assets/lagertha.jpg",
+        "image": "assets/lagertha.jpg",
         "clicked": false
     },
     {
         "id": 7,
         "name": "Mags Bennett",
-        "image": "/assets/mags.jpg",
+        "image": "assets/mags.jpg",
         "clicked": false
     },
     {
         "id": 8,
         "name": "Nikita",
-        "image": "/assets/nikita.png",
+        "image": "assets/nikita.png",
         "clicked": false
     },
     {
         "id": 9,
         "name": "Precious Ramotswe",
-        "image": "/assets/precious.jpg",
+        "image": "assets/precious.jpg",
         "clicked": false
     },
     {
         "id": 10,
         "name": "Ellen Ripley",
-        "image": "/assets/ripley.png",
+        "image": "assets/ripley.png",
         "clicked": false
     },
     {
         "id": 11,
         "name": "Dana Scully",
-        "image": "/assets/scully.jpg",
+        "image": "assets/scully.jpg",
         "clicked": false
     },
     {
         "id": 12,
         "name": "Zoe",
-        "image": "/assets/zoe.jpg",
+        "image": "assets/zoe.jpg",
         "clicked": false
     }
 ]
