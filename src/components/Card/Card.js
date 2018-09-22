@@ -10,13 +10,6 @@ const Card = props => {
             onClick={() => props.handleClick(props.name)}>
         </div>
 
-        // <img 
-        //     key={props.key} 
-        //     alt={props.alt}
-        //     className="block"
-        //     src={props.src}
-        //     onClick={() => props.handleClick(props.name)}
-        // />
     )
 };
 
