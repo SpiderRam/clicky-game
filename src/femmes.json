@@ -2,73 +2,73 @@
     {
         "id": 1,
         "name": "Aeryn Sun",
-        "image": "../images/Aeryn.jpg",
+        "image": "/assets/aeryn.jpg",
         "clicked": false
     },
     {
         "id": 2,
         "name": "Arya Stark",
-        "image": "../images/Arya.jpg",
+        "image": "/assets/arya.jpg",
         "clicked": false
     },
     {
         "id": 3,
         "name": "Debra Morgan",
-        "image": "../images/Debra.jpg",
+        "image": "/assets/debra.jpg",
         "clicked": false
     },
     {
         "id": 4,
         "name": "Hermione Granger",
-        "image": "../images/Hermione.jpeg",
+        "image": "/assets/hermione.jpeg",
         "clicked": false
     },
     {
         "id": 5,
         "name": "Captain Janeway",
-        "image": "../images/Janeway.jpg",
+        "image": "/assets/janeway.jpg",
         "clicked": false
     },
     {
         "id": 6,
         "name": "Lagertha",
-        "image": "../images/Lagertha.jpg",
+        "image": "/assets/lagertha.jpg",
         "clicked": false
     },
     {
         "id": 7,
         "name": "Mags Bennett",
-        "image": "../images/Mags.jpg",
+        "image": "/assets/mags.jpg",
         "clicked": false
     },
     {
         "id": 8,
         "name": "Nikita",
-        "image": "../images/Nikita.png",
+        "image": "/assets/nikita.png",
         "clicked": false
     },
     {
         "id": 9,
         "name": "Precious Ramotswe",
-        "image": "../images/Precious.jpg",
+        "image": "/assets/precious.jpg",
         "clicked": false
     },
     {
         "id": 10,
         "name": "Ellen Ripley",
-        "image": "../images/Ripley.png",
+        "image": "/assets/ripley.png",
         "clicked": false
     },
     {
         "id": 11,
         "name": "Dana Scully",
-        "image": "../images/Scully.jpg",
+        "image": "/assets/scully.jpg",
         "clicked": false
     },
     {
         "id": 12,
         "name": "Zoe",
-        "image": "../images/Zoe.jpg",
+        "image": "/assets/zoe.jpg",
         "clicked": false
     }
 ]

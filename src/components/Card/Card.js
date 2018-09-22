@@ -9,7 +9,6 @@ const Card = props => {
             className="block"
             onClick={() => props.handleClick(props.name)}>
         </div>
-
     )
 };
 
